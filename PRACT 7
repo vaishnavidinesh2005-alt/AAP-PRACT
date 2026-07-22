@@ -1,0 +1,6 @@
+class Student:
+    @staticmethod
+    def welcome():
+        print("Welcome to MIT ADT University")
+
+Student.welcome()
