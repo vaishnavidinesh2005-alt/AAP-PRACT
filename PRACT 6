@@ -1,0 +1,6 @@
+class Student:
+    def display(self):
+        print("Student of MIT ADT University")
+
+s1 = Student()
+s1.display()
