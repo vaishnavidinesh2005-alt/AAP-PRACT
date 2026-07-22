@@ -1,0 +1,32 @@
+
+
+def add_details(cls):
+    # Adding a new method to the class
+    def student_info(self):
+        print("Student Name:", self.name)
+        print("Course:", self.course)
+
+    cls.student_info = student_info
+    return cls
+
+
+@add_details
+class Student:
+
+    def __init__(self, name, course):
+        self.name = name
+        self.course = course
+
+    def display(self):
+        print("Student Record")
+        print("Name:", self.name)
+        print("Course:", self.course)
+
+
+# Creating an object
+s1 = Student("Vaishnavi", "B.Tech CSE")
+
+# Calling methods
+s1.display()
+print()
+s1.student_info()
