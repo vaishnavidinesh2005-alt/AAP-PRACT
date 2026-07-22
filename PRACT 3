@@ -1,0 +1,15 @@
+def check_method(func):
+    def wrapper(self):
+        print("Calling the method...")
+        func(self)
+    return wrapper
+
+class Calculator:
+    @check_method
+    def add(self):
+        a = 10
+        b = 20
+        print("Sum =", a + b)
+
+c = Calculator()
+c.add()
