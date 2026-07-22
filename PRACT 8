@@ -1,0 +1,8 @@
+class Student:
+    college = "MIT ADT University"
+
+    @classmethod
+    def show_college(cls):
+        print("College:", cls.college)
+
+Student.show_college()
