@@ -7,3 +7,5 @@ print(next(my_iterator))
 print(next(my_iterator))
 print(next(my_iterator))
 print(next(my_iterator))
+
+#iterator example
