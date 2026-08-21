@@ -6,3 +6,4 @@ class Student:
         print("College:", cls.college)
 
 Student.show_college()
+#class method example
