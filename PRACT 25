@@ -1,0 +1,17 @@
+class EmailService:
+    def send(self, message):
+        print("Email sent:", message)
+
+
+class Notification:
+    def __init__(self, service):
+        self.service = service
+
+    def send_notification(self, message):
+        self.service.send(message)
+
+
+email = EmailService()
+notification = Notification(email)
+
+notification.send_notification("Your assignment is submitted.")
