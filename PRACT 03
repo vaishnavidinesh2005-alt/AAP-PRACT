@@ -1,6 +1,6 @@
 def check_method(func):
     def wrapper(self):
-        print("Calling the method...")
+        print("Calling the method....")
         func(self)
     return wrapper
 
