@@ -26,7 +26,7 @@ class Student:
 # Creating an object
 s1 = Student("Vaishnavi", "B.Tech CSE")
 
-# Calling methods
+
 s1.display()
 print()
 s1.student_info()
