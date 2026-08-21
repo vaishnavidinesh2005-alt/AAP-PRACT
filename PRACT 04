@@ -13,5 +13,5 @@ class Student:
         print(self.name)
         print(marks)
 
-s = Student("Vaishnavi")
+s = Student("Vaishnavi Dinesh")
 s.show()
