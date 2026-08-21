@@ -1,6 +1,6 @@
 def my_decorator(func):
     def wrapper():
-        print("Function is starting...")
+        print("Function is starting....")
         func()
         print("Function is finished.")
     return wrapper
