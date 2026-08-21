@@ -1,6 +1,17 @@
 class Student:
-    def display(self):
-        print("Student of MIT ADT University")
+    # Constructor
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-s1 = Student()
-s1.display()
+    # Method
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+
+# Creating an object
+student1 = Student("Vaishnavi", 20)
+
+# Calling the method
+student1.display()
