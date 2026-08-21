@@ -1,17 +1,18 @@
-x = 10
-
 class Student:
-    college = "MIT ADT"
+    college = "MIT ADT"       # Class variable
 
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, name, marks):
+        self.name = name      # Instance variable
+        self.marks = marks    # Instance variable
 
     def show(self):
-        marks = 85
-        print(x)
-        print(self.college)
-        print(self.name)
-        print(marks)
+        subject = "Python"    # Local variable
 
-s = Student("Vaishnavi Dinesh")
-s.show()
+        print("Name:", self.name)
+        print("Marks:", self.marks)
+        print("College:", Student.college)
+        print("Subject:", subject)
+
+
+s1 = Student("Vaishnavi", 85)
+s1.show()
